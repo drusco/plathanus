@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(130, 129, 129);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  user-select: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.svg {
+  &-color {
+    &-inherit {
+      fill: currentColor !important;
+      path {
+        fill: currentColor !important;
+      }
+    }
+  }
+}

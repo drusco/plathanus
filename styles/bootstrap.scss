@@ -1,0 +1,8 @@
+$enable-responsive-font-sizes: true;
+
+$theme-colors: (
+        'white-80': rgba(255, 255, 255, .8),
+        'primary': rgb(84, 209, 84)
+);
+
+@import '~bootstrap/scss/bootstrap';

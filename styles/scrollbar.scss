@@ -1,0 +1,21 @@
+*::-webkit-scrollbar-track
+{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar
+{
+  width: 8px;
+  height: 8px;
+  background-color: #F5F5F5;
+  transition: all 2s linear;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #d2d2d2;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #aaaaaa;
+}
