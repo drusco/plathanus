@@ -1,3 +1,5 @@
+@import 'scrollbar';
+
 html,
 body {
   margin: 0;
@@ -7,6 +9,7 @@ body {
   font-weight: 300;
   font-size: 1em;
   user-select: none;
+  overflow: hidden;
 }
 
 a {
@@ -18,6 +21,11 @@ a {
   box-sizing: border-box;
 }
 
+.full{
+  width: 100%;
+  height: 100%;
+}
+
 .svg {
   &-color {
     &-inherit {
@@ -26,5 +34,17 @@ a {
         fill: currentColor !important;
       }
     }
+  }
+}
+
+.logo {
+  &-sm {
+    width: 24px;
+  }
+}
+
+.animate {
+  &-x {
+    transition: margin-left, margin-right, .2s linear;
   }
 }

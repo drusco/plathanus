@@ -17,5 +17,8 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "17.0.1",
     "sass": "^1.28.0"
+  },
+  "devDependencies": {
+    "migrate-mongo": "^8.1.4"
   }
 }

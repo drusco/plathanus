@@ -1,7 +1,33 @@
-export default function MenuSidebar(){
-    return (
-        <div className="menu-sidebar d-none">
-            sidebar
-        </div>
-    )
+import Menu from '../components/menu'
+import Link from 'next/link'
+import React from 'react'
+
+export default function MenuSidebar() {
+  return (
+    <aside className="sidebar-menu full d-flex flex-column bg-darkest">
+      <header className="p-4">
+        <Link href="/">
+          <a className="keep-out">
+            <img src="/images/logo.png" alt="Plathanus"/>
+          </a>
+        </Link>
+      </header>
+      {/* article */}
+      <article className="d-flex h-100">
+        {/* scrollable */}
+        <section className="position-relative full m-auto overflow-auto d-flex align-items-center">
+          {/* wrapper */}
+          <section className="position-absolute full">
+            {/* inner-wrapper */}
+            <div className="position-relative h-100 d-flex flex-column">
+
+              {/* custom-content */}
+              <Menu/>
+
+            </div>
+          </section>
+        </section>
+      </article>
+    </aside>
+  )
 }
