@@ -1,0 +1,16 @@
+$enable-responsive-font-sizes: true;
+
+$dark: #343A40;
+$primary: #54D154;
+
+$glass: transparentize(white, .2);
+$darker: darken($dark, 10%);
+$darkest: darken($dark, 20%);
+
+$theme-colors: (
+  'glass': $glass,
+  'dark': $dark,
+  'darker': $darker,
+  'darkest': $darkest,
+  'primary': $primary
+);

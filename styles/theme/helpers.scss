@@ -1,0 +1,77 @@
+.full{
+  width: 100%;
+  height: 100%;
+}
+
+.svg {
+  &-color {
+    &-inherit {
+      fill: currentColor !important;
+      path {
+        fill: currentColor !important;
+      }
+    }
+  }
+}
+
+.animate {
+  &-x {
+    transition: margin-left, margin-right, .2s linear;
+  }
+}
+
+.allow-blur{
+  .blur {
+    &::after {
+      content: '';
+      background-color: transparentize($darkest, .3);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 99;
+      backdrop-filter: blur(2px);
+    }
+    .highlight {
+      z-index: 100;
+    }
+    .keep-out {
+      display: none;
+    }
+  }
+}
+
+.carousel-ui-on-hover {
+  &.carousel {
+    .carousel {
+      &-indicators {
+        opacity: 0;
+      }
+      &-control {
+        &-prev, &-next { opacity: 0 }
+      }
+    }
+  }
+  &.carousel:hover {
+    .carousel {
+      &-indicators {
+        opacity: .9;
+      }
+      &-control {
+        &-prev, &-next { opacity: .9 }
+      }
+    }
+  }
+}
+
+.carousel-h-100 {
+  height: 100%;
+  .carousel {
+    &-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

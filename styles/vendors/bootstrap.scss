@@ -1,14 +1,2 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-
-$enable-responsive-font-sizes: true;
-
-$theme-colors: (
-        'glass': transparentize(white, .2),
-        'darker': darken(#343a40, 10%),
-        'darkest': darken(#343a40, 20%),
-        'primary': rgb(84, 209, 84)
-);
-
+@import 'bootstrap.settings';
 @import '~bootstrap/scss/bootstrap';

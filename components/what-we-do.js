@@ -29,7 +29,7 @@ export default class WhatWeDo extends React.Component {
       <section id="what-we-do" className="bg-white">
 
         <div className="text-center mt-4 mb-3 p-3">
-          <h2 className="font-montserrat-semibold text-uppercase h5 home-title">What
+          <h2 className="font-montserrat-semibold text-uppercase h5 title-with-line">What
             we do</h2>
           <p className="font-open-sans-light">Lorem ipsum dolor sit
             amet. Proin gravida nibh vel velit auctor aliquet</p>

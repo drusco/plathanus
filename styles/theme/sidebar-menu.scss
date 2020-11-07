@@ -1,0 +1,23 @@
+.sidebar-menu {
+  .main-menu {
+    .nav {
+      &-item{
+        display: block;
+        margin: 0;
+        width: 100%;
+      }
+      &-link {
+        border-bottom: 0;
+        border-top: 1px solid theme-color('dark');
+        border-left: 4px solid transparent;
+        padding: 1em !important;
+        &:hover, &.active{
+          background-color: theme-color('darker');
+        }
+        &.active {
+          border-left-color: theme-color('primary');
+        }
+      }
+    }
+  }
+}

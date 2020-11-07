@@ -1,0 +1,18 @@
+@import '../vendors/bootstrap.settings';
+
+.mainHeader {
+
+}
+
+.search {
+  input {
+    &::placeholder {
+      color: $dark;
+    }
+
+    background-image: url('/images/magnifying-glass.png');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    padding-right: 30px;
+  }
+}

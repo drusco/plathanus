@@ -1,0 +1,25 @@
+.main-menu {
+  .nav {
+    &-item{
+      margin-right: 1.2em;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &-link {
+      border-top: 4px solid transparent;
+      padding-top: 1.2em;
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: 500;
+      text-shadow: 0 0 10px rgba(0, 0, 0, .8);
+      color: white !important;
+      &:hover, &.active{
+        font-weight: bold;
+      }
+      &.active {
+        border-top-color: theme-color('primary');
+      }
+    }
+  }
+}

@@ -7,8 +7,10 @@ export default class Menu extends React.Component {
 
     super(props);
 
+    this.defaultKey = 'home'
+
     this.state = {
-      activeKey: props.activeKey || 'home'
+      activeKey: props.activeKey || this.defaultKey
     }
 
     this.onSelect = this._onSelect.bind(this)
@@ -24,7 +26,9 @@ export default class Menu extends React.Component {
   }
 
   _onHashChange() {
-    this.setState({activeKey:location.hash.substring(2)})
+    if(!location.hash.startsWith('#!/')) return
+    const key = location.hash ? location.hash.substring(3) : (this.state.activeKey || this.defaultKey)
+    this.setState({activeKey: key})
   }
 
   componentDidMount() {
@@ -41,16 +45,16 @@ export default class Menu extends React.Component {
       <div className="main-menu">
         <BNav activeKey={this.state.activeKey} onSelect={this.onSelect}>
           <BNav.Item>
-            <BNav.Link eventKey="home" href="#/home">Home</BNav.Link>
+            <BNav.Link eventKey="home" href="#!/home">Home</BNav.Link>
           </BNav.Item>
           <BNav.Item>
-            <BNav.Link eventKey="what-we-do" href="#/what-we-do">What we do?</BNav.Link>
+            <BNav.Link eventKey="what-we-do" href="#!/what-we-do">What we do?</BNav.Link>
           </BNav.Item>
           <BNav.Item>
-            <BNav.Link eventKey="testimonial" href="#/testimonial">Testimonial</BNav.Link>
+            <BNav.Link eventKey="testimonial" href="#!/testimonial">Testimonial</BNav.Link>
           </BNav.Item>
           <BNav.Item>
-            <BNav.Link eventKey="contact" href="#/contact">Contact</BNav.Link>
+            <BNav.Link eventKey="contact" href="#!/contact">Contact</BNav.Link>
           </BNav.Item>
         </BNav>
       </div>
