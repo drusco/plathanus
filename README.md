@@ -1,6 +1,6 @@
 ### Desafio Técnico Developer
 
-_Author: Pedro Gallardo_
+_Autor: Pedro Gallardo_
 
 #### Pré requisitos
 
@@ -15,7 +15,7 @@ _Author: Pedro Gallardo_
     
 ##### 2. Banco de dados
 
-* Renomear o arquivo ~~.env~~ para .env.local
+* Renomear o arquivo `.env` para `.env.local`
 * Edite as variáveis `MONGODB_DB` e `MONGODB_URI`
 * Migrar o banco de dados:
 
@@ -34,6 +34,6 @@ Servidor de produção:
 
 O aplicativo pode ser acessado em:
 
-[http://localhost:3000](http://localhost:3000)
+* [http://localhost:3000](http://localhost:3000)
 
 
