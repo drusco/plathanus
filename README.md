@@ -19,7 +19,7 @@ _Autor: Pedro Gallardo_
 * Edite as variáveis `MONGODB_DB` e `MONGODB_URI`
 * Migrar o banco de dados:
 
-        migrate-mongo up
+      migrate-mongo up
 
 ##### 3. Executar aplicativo
 
