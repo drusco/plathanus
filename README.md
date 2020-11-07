@@ -20,7 +20,7 @@ _Autor: Pedro Gallardo_
 * Migrar o banco de dados:
 
       migrate-mongo up
-
+      
 ##### 3. Executar aplicativo
 
 Servidor de desenvolvimento:
