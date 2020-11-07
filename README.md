@@ -1,19 +1,39 @@
-## Plathanus Technical Test
+### Desafio Técnico Developer
 
-This is a test for a full-stack job vacancy at [Plathanus](https://www.plathanus.com.br/)
+_Author: Pedro Gallardo_
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#### Pré requisitos
 
-### Getting Started
+* [Node](https://nodejs.org/en/download/) versão 10 ou mais recente
+* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/) ou ter uma conta em [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
-First, run the development server:
+#### Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+##### 1. Instale dependências
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    npm install
+    
+##### 2. Banco de dados
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+* Renomear o arquivo ~~.env~~ para .env.local
+* Edite as variáveis `MONGODB_DB` e `MONGODB_URI`
+* Migrar o banco de dados:
+
+        migrate-mongo up
+
+##### 3. Executar aplicativo
+
+Servidor de desenvolvimento:
+
+    npm run dev
+    
+Servidor de produção:
+
+    npm run build
+    npm start
+
+O aplicativo pode ser acessado em:
+
+[http://localhost:3000](http://localhost:3000)
+
+
