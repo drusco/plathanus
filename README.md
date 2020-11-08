@@ -7,8 +7,8 @@ _Autor: Pedro Gallardo_
 
 * `git clone https://github.com/mescalinico/plathanus-test.git`
 * `cd plathanus-test`
-* `docker-compose up -d`
-* `docker-compose exec app npm run migrate up`
+* `sudo docker-compose up -d`
+* `sudo docker-compose exec app npm run migrate up`
 
 Front-end: [http://localhost:3000](http://localhost:3000)
 
