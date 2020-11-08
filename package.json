@@ -1,11 +1,13 @@
 {
   "name": "plathanus-test",
+  "description": "Desafio técnico para Plathanus",
   "author": "Pedro Gallardo",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "migrate": "migrate-mongo"
   },
   "dependencies": {
     "@svgr/webpack": "^5.4.0",

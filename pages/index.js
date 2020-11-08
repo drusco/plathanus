@@ -111,7 +111,7 @@ export default class HomePage extends React.Component {
                                 <section className="h-100 w-100 position-absolute">
                                   <div className="h-100 d-flex flex-column">
 
-                                    <Carousel onSelect={this.onCarouselSelect} pause={false} indicators={false} fade={true} className="carousel-h-100 carousel-ui-on-hover">
+                                    <Carousel controls={this.state.slides.length > 0} onSelect={this.onCarouselSelect} pause={false} indicators={false} fade={true} className="carousel-h-100 carousel-ui-on-hover">
                                       {this.state.slides.map((slide, i) => (
                                         <Carousel.Item key={i}>
 

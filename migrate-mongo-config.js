@@ -1,6 +1,4 @@
-const path = require('path')
-
-require('dotenv').config({ path: path.resolve('./.env.local') })
+require('dotenv').config()
 
 const { MONGODB_URI, MONGODB_DB } = process.env
 

@@ -2,38 +2,44 @@
 
 _Autor: Pedro Gallardo_
 
-#### Pré requisitos
+##
+#### Começo Rápido
 
-* [Node](https://nodejs.org/en/download/) versão 10 ou mais recente
-* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/) ou ter uma conta em [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+* `git clone https://github.com/mescalinico/plathanus-test.git`
+* `cd plathanus-test`
+* `docker-compose up -d`
+* `docker-compose exec app npm run migrate up`
 
-#### Setup
+Front-end: [http://localhost:3000](http://localhost:3000)
 
-##### 1. Instale dependências
+##
+#### Sem Docker
+
+###### Pré requisitos
+
+* [Node](https://nodejs.org/en/download/) >= 10
+* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/) ou [Atlas](https://www.mongodb.com/cloud/atlas)
+
+
+##### Instale dependências
 
     npm install
     
-##### 2. Banco de dados
+##### Banco de dados
 
-* Renomear o arquivo `.env` para `.env.local`
-* Edite as variáveis `MONGODB_DB` e `MONGODB_URI`
-* Migrar o banco de dados:
-
-      migrate-mongo up
+* Abra o arquivo **.env** e edite as variáveis de conexão
+* Atualize o banco de dados `migrate-mongo up`
       
-##### 3. Executar aplicativo
+##### Executar aplicativo
 
-Servidor de desenvolvimento:
+Desenvolvimento
 
     npm run dev
     
-Servidor de produção:
+Produção
 
     npm run build
     npm start
 
-O aplicativo pode ser acessado em:
-
-* [http://localhost:3000](http://localhost:3000)
-
-
+##
+#####
