@@ -5,7 +5,7 @@ _Autor: Pedro Gallardo_
 ##
 #### Começo Rápido
 
-* `git clone https://github.com/mescalinico/plathanus-test.git`
+* `git clone https://github.com/drusco/plathanus.git`
 * `cd plathanus-test`
 * `sudo docker-compose up -d`
 * `sudo docker-compose exec app npm run migrate up`
